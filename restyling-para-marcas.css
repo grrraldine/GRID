@@ -79,11 +79,8 @@ color:#000;
 
 .caja-general {
   position: absolute;
-/*   width: 42%;
- */  left: 50%;
+  left: 50%;
   transform: translateY(-100%);
-/*   object-fit: contain;
- */
 }
 
 .caja-general {
@@ -120,12 +117,6 @@ color:#000;
 
 .caja-texto-1 {
   display: flex;
-/*   border-color: #ffffff;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-width: 10px;
-  box-sizing: content-box;
-   */
   text-align: justify;
 }
 
@@ -259,8 +250,7 @@ color:#000;
 
 .arrow-grande {
   width: calc(20% + 6vw);
-/*   height: fit-content;
- */  object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 .texto-link {
@@ -281,7 +271,6 @@ color:#000;
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%; 
-    /*   grid-template-rows: 2fr 2fr;*/
     gap: 20px; 
     grid-template-areas: 
                         "cajauno cajados"
@@ -416,11 +405,8 @@ font-weight: 500;
 
 .caja-img-3 {
   display: flex;
-/*   flex-direction: row-reverse;
- */  grid-area: cajatres;
-/*   align-items: flex-end;
- */ /*  padding-top: 2.5rem; */
- justify-content: center;
+  grid-area: cajatres;
+  justify-content: center;
 }
 
 .caja-img-3 {
@@ -546,8 +532,7 @@ font-weight: 500;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-/*   height: 7rem;
- */}
+}
 
 
 .tit2 {
@@ -717,4 +702,65 @@ font-weight: 500;
 .ig {
   width: 18px;
 
+}
+
+@media (max-width: 1101px) {
+  .arrow-grande {
+    width: calc(5% + 5vw);
+    object-fit: scale-down;
+  }
+  .caja-link-a {
+    display: flex;
+    background: #0A8765;
+    padding: calc(0.1rem + 1vw) 0rem calc(0.1rem + 1vw) 0rem;
+    padding-left: 0rem;
+    gap: 5%;
+    padding-left: 0.88rem;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .caja-link-a {
+    display: flex;
+    background: #0A8765;
+    gap: 49%;
+    padding-left: 0.88rem;
+  }
+}
+.arrow-grande {
+  width: calc(20% + 6vw);
+  object-fit: scale-down;
+}
+
+@media (max-width: 750px) {
+  .caja-general {
+    position: relative;
+    left: 0%;
+    transform: translateY(0%);
+    background-color: #DBFF00;
+    }
+  .caja-general {
+    display: block;
+  }
+
+  .caja-texto-a {
+    display: block;
+  }
+  .caja-texto-a {
+    margin-bottom: 0rem;
+  }
+
+  .texto-link {
+    font-size: initial;
+  }
+  .caja-texto-encabezado {
+display: none;
+  }
+  .encabezado-restyling {
+    padding: 1rem;
+  }
+  .tit1 {
+    font-size: calc(1.5rem + 6vw);
+  }
 }
